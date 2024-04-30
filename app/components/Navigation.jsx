@@ -18,18 +18,18 @@ const Navigation = (props) => {
         <nav className="max-w-screen-lg w-full flex justify-between gap-4" key={year}>
           <button
             style={year > 2013 ? { backgroundColor: colorDark } : {opacity: 0, pointerEvents: "none"}}
-            className="h-[12vh] my-[4vh] mx-[4vh] aspect-square rounded-md"
+            className="h-[10vh] my-[5vh] mx-[1vh] md:h-[12vh] md:my-[4vh] md:mx-[4vh] aspect-square rounded-md"
             onClick={() => dispatch(decrement())}
           >
             {"<"}
           </button>
           <div className="flex flex-col justify-center w-full text-center">
-            <h1 className="font-2049 text-4xl">{props.data[year].title}</h1>
+            <h1 className="font-2049 text-lg md:text-4xl">{props.data[year].title}</h1>
             <span className="font-2049">{props.data[year].venue}</span>
           </div>
           <button
             style={year < 2024 ? { backgroundColor: colorDark } : {opacity: 0, pointerEvents: "none"}}
-            className="h-[12vh] my-[4vh] mx-[4vh] aspect-square rounded-md"
+            className="h-[10vh] my-[5vh] mx-[1vh] md:h-[12vh] md:my-[4vh] md:mx-[4vh] aspect-square rounded-md"
             onClick={() => dispatch(increment())}
           >
             {">"}
