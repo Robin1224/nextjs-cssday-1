@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        'ib': '480px',
+      },
       fontFamily: {
         brut: ['var(--font-brut)'],
         2049: ['var(--font-2049)'],

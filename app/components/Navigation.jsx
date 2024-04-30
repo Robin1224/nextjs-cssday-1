@@ -18,7 +18,7 @@ const Navigation = (props) => {
         <nav className="max-w-screen-lg w-full flex justify-between gap-4" key={year}>
           <button
             style={year > 2013 ? { backgroundColor: colorDark } : {opacity: 0, pointerEvents: "none"}}
-            className="h-[10vh] my-[5vh] mx-[1vh] md:h-[12vh] md:my-[4vh] md:mx-[4vh] aspect-square rounded-md"
+            className="h-[10vh] my-[5vh] mx-[1vh] ib:h-[12vh] ib:my-[4vh] ib:mx-[4vh] aspect-square rounded-md"
             onClick={() => dispatch(decrement())}
           >
             {"<"}
@@ -29,7 +29,7 @@ const Navigation = (props) => {
           </div>
           <button
             style={year < 2024 ? { backgroundColor: colorDark } : {opacity: 0, pointerEvents: "none"}}
-            className="h-[10vh] my-[5vh] mx-[1vh] md:h-[12vh] md:my-[4vh] md:mx-[4vh] aspect-square rounded-md"
+            className="h-[10vh] my-[5vh] mx-[1vh] ib:h-[12vh] ib:my-[4vh] ib:mx-[4vh] aspect-square rounded-md"
             onClick={() => dispatch(increment())}
           >
             {">"}
